@@ -44,3 +44,5 @@ A composição aprovada orienta as proporções, com fotografias independentes d
 `resolution-fix.css` limita a escala do desktop a um conteúdo equivalente a 1280 px, mesmo em monitores maiores. O título principal tem limite de 80 px. A abertura mobile usa título menor, retrato com enquadramento próprio, apresentação curta e apenas a foto do ambiente na seção complementar, conforme a referência mobile.
 
 O CSS mantém a composição do desktop acima de 700 px e reorganiza o conteúdo abaixo dessa largura. O Instagram não foi vinculado porque o perfil ainda não foi informado.
+
+Os ramos decorativos usam uma ilustração vetorial de linhas finas com nervuras (`assets/branch-fine.svg`), baseada no desenho da referência. A fotografia da hero mantém o arquivo de alta resolução, com recorte de busto, extensão até a lateral da tela e duas curvas sobrepostas na transição inferior.
