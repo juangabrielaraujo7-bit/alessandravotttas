@@ -1,0 +1,38 @@
+# Alessandra Vottas
+
+Site institucional responsivo em português, baseado na proposta visual aprovada: vinho, rosa e off-white, tipografia Cormorant Garamond + Manrope, fotografias e formas orgânicas.
+
+## Abrir no computador
+
+Abra `index.html` no navegador. Não precisa instalar dependências ou compilar. Fontes e imagens estão salvas na pasta `assets/`.
+
+## Publicar na Vercel
+
+1. Importe este repositório em **Add New → Project**.
+2. Framework Preset: **Other**.
+3. Root Directory: raiz do repositório.
+4. Deixe Build Command e Output Directory sem personalização (site estático na raiz).
+5. Clique em **Deploy**.
+
+## Atualizar contato
+
+O WhatsApp provisório informado pelo responsável está centralizado em `CONTACT.whatsapp`, no início de `script.js`. Altere esse valor para trocar o destino de todos os botões. Os dois links no HTML também têm esse número como alternativa caso JavaScript esteja desativado; atualize-os ao trocar o contato.
+
+## Conteúdo e imagens
+
+- Retrato criado a partir da foto real fornecida e aprovado durante a direção visual.
+- Fotografia do ambiente é ilustrativa; sua legenda informa isso.
+- Não há depoimentos, credenciais ou avaliações inventadas.
+- Localidade de atendimento recuperada dos prints fornecidos: São João da Boa Vista–SP. Confirmar endereço e modalidades pelo WhatsApp.
+- O menu mobile pode ser fechado com Escape, toque fora ou seleção de um link.
+- Perguntas frequentes usam elementos nativos `details`/`summary`.
+- Links de serviços abrem conversas com mensagens específicas.
+- A página respeita a preferência por movimento reduzido.
+
+## Arquivos
+
+- `index.html`: estrutura e conteúdo.
+- `styles.css`: identidade visual e adaptação para celular/tablet/desktop.
+- `script.js`: menu, história expansível e mensagens de WhatsApp.
+- `assets/`: imagens e fontes locais.
+- `vercel.json`: configuração estática e cabeçalhos.
