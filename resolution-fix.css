@@ -1,0 +1,82 @@
+/* Real photographs and a bounded desktop canvas. No enlarged preview crops. */
+:root { --u: min(calc(100vw / 711), 1.8px); }
+img { display:block; width:100%; height:100%; object-fit:cover; }
+.hero-inner { width:min(100%,1280px); margin-inline:auto; }
+.hero-copy { padding-left:calc(75 * var(--u)); }
+.hero { min-height:0; }
+.hero-portrait { overflow:hidden; background:#d7bdb2; }
+.hero-portrait img { object-position:50% 38%; transform:scale(1.2); }
+.about-grid { width:min(100%,1280px); margin-inline:auto; }
+.about-photo { overflow:hidden; }
+.about-photo img { object-position:50% 35%; transform:scale(1.18); }
+.care-image { overflow:hidden; }
+.care-image img { object-position:center; }
+.care-image-cup { clip-path:url(#care-photo-crop); border-radius:0; }
+.care-image-care { clip-path:url(#care-photo-crop); }
+.hero-leaf { background:none; mix-blend-mode:normal; transform:rotate(-12deg); }
+.hero-leaf use { display:inline; }
+.site-header { max-height:112px; }
+.hero::after { content:''; position:absolute; z-index:3; bottom:0; left:0; width:100%; height:calc(26 * var(--u)); background:#f2e0e4; clip-path:url(#wave-top); pointer-events:none; }
+.about::before { display:none; }
+@media(min-width:701px) {
+  .hero h1 { font-size:clamp(46px,5.9vw,80px); }
+  .hero-portrait { height:calc(315 * var(--u)); margin-top:0; }
+  .hero-inner { min-height:calc(330 * var(--u)); }
+  .hero-description { font-size:clamp(14px,1.35vw,18px); }
+  .hero-actions .button { font-size:12px; min-height:46px; padding:12px 23px; }
+  .hero-actions .text-link { font-size:11px; }
+  .site-header nav { font-size:12px; }
+  .site-header .button { font-size:12px; min-height:44px; }
+  .hero-copy { padding-top:calc(43 * var(--u)); }
+}
+@media(max-width:700px) {
+  :root { --u:1px; }
+  .site-header { height:68px; width:calc(100% - 48px); }
+  .brand-copy,.footer-top .brand-copy { font-size:22px; }
+  .monogram { font-size:42px; }
+  .hero-inner { display:block; position:relative; width:100%; padding-bottom:0; }
+  .hero-copy { padding:16px 30px 0 max(30px,17vw); position:relative; z-index:2; }
+  .hero h1 { font-size:clamp(36px,9.8vw,54px); line-height:.95; }
+  .hero-description { font-size:12px; line-height:1.45; max-width:245px; }
+  .hero .little-rule { margin:12px 0; width:30px; }
+  .hero-actions { margin-top:15px; }
+  .hero-actions .button { min-height:42px; padding:10px 22px; font-size:12px; }
+  .hero-actions .text-link { display:none; }
+  .hero-portrait { width:100%; height:250px; margin-top:-14px; clip-path:url(#hero-photo-crop); }
+  .hero-portrait img { object-position:50% 36%; transform:translateX(24px) scale(1.4); transform-origin:50% 0; }
+  .hero-leaf { left:-45px; top:75px; bottom:auto; width:110px; height:260px; opacity:.55; }
+  .about { padding:18px 0 40px; }
+  .about h2 { font-size:36px; }
+  .about-copy { padding-inline:8px; }
+  .about .eyebrow { display:none; }
+  .about-copy>p:not(.quiet):not(.eyebrow),.about-copy .little-rule { display:none; }
+  .about-copy .quiet { font-size:13px!important; line-height:1.5; margin-top:12px!important; }
+  .about .text-link { margin-top:14px; font-size:12px; }
+  .about .text-link span { display:inline; }
+  .about-leaf { top:-70px; right:-30px; }
+  .care-card:not(:first-child) { display:none; }
+  .care-image-room { aspect-ratio:1.9; }
+  .care { padding-top:48px; padding-bottom:40px; }
+  .care h2 { font-size:33px; }
+  .care .section-heading>p:not(.eyebrow) { display:none; }
+  .care-grid { margin-top:20px; }
+  .care h3 { font-size:24px; }
+  .care-card p { font-size:12px; }
+  .services h2 { font-size:35px; }
+  .services h3 { font-size:22px; }
+  .services article p { font-size:11px; }
+  .process h2 { font-size:35px; }
+  .process-grid>div>p:last-child { display:none; }
+  .steps { gap:22px; margin-top:24px; }
+  .steps li { min-height:65px; padding-left:94px; }
+  .step-number { position:absolute; left:73px; top:11px; }
+  .steps h3 { font-size:22px; padding-top:9px; }
+  .steps p { font-size:11px; }
+  .statement-title { font-size:33px; }
+  .statement-title em { display:inline; }
+  .faq h2 { font-size:35px; }
+  .contact h2 { font-size:43px; }
+  .contact-grid p { font-size:22px; }
+  .contact-grid>div { margin-top:15px; }
+  footer { padding-top:38px; }
+}

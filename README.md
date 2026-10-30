@@ -39,6 +39,8 @@ O WhatsApp provisório informado pelo responsável está centralizado em `CONTAC
 
 ## Fidelidade à proposta visual
 
-A revisão usa a composição completa aprovada como medida para as proporções do desktop. Os cinco recortes fotográficos são renderizados a partir de `assets/referencia-visual.png` por coordenadas CSS; os textos, navegação, botões, perguntas e estrutura continuam sendo HTML real e responsivo. A resolução dessas fotografias acompanha a imagem fornecida. Para substituir por originais maiores, mantenha os mesmos enquadramentos.
+A composição aprovada orienta as proporções, com fotografias independentes de 1536 × 1024 px e elementos decorativos vetoriais. A página não renderiza ou amplia recortes da prévia. Textos, navegação, botões, perguntas e estrutura são HTML real e responsivo.
+
+`resolution-fix.css` limita a escala do desktop a um conteúdo equivalente a 1280 px, mesmo em monitores maiores. O título principal tem limite de 80 px. A abertura mobile usa título menor, retrato com enquadramento próprio, apresentação curta e apenas a foto do ambiente na seção complementar, conforme a referência mobile.
 
 O CSS mantém a composição do desktop acima de 700 px e reorganiza o conteúdo abaixo dessa largura. O Instagram não foi vinculado porque o perfil ainda não foi informado.

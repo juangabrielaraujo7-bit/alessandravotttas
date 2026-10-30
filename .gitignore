@@ -6,5 +6,4 @@ work/
 referencias/
 assets/fonts-source.css
 assets/*.png
-!assets/referencia-visual.png
 *.log
