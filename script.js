@@ -38,6 +38,7 @@ storyButton.addEventListener('click', () => {
 });
 
 document.querySelectorAll('[data-service]').forEach(link => {
+  link.setAttribute('aria-label', `Saiba mais sobre ${link.dataset.service}`);
   link.href = whatsappUrl(`Olá! Gostaria de saber mais sobre ${link.dataset.service}.`);
   link.target = '_blank';
   link.rel = 'noopener noreferrer';

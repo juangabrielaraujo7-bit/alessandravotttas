@@ -36,3 +36,9 @@ O WhatsApp provisório informado pelo responsável está centralizado em `CONTAC
 - `script.js`: menu, história expansível e mensagens de WhatsApp.
 - `assets/`: imagens e fontes locais.
 - `vercel.json`: configuração estática e cabeçalhos.
+
+## Fidelidade à proposta visual
+
+A revisão usa a composição completa aprovada como medida para as proporções do desktop. Os cinco recortes fotográficos são renderizados a partir de `assets/referencia-visual.png` por coordenadas CSS; os textos, navegação, botões, perguntas e estrutura continuam sendo HTML real e responsivo. A resolução dessas fotografias acompanha a imagem fornecida. Para substituir por originais maiores, mantenha os mesmos enquadramentos.
+
+O CSS mantém a composição do desktop acima de 700 px e reorganiza o conteúdo abaixo dessa largura. O Instagram não foi vinculado porque o perfil ainda não foi informado.
